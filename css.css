@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  background: #dbdbdb;
+  font-family: monospace;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.calculadora {
+  width: 25%;
+  background-color: #eb79b6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+#display {
+  width: 100%;
+  height: 56px;
+  font-size: 20px;
+  text-align: right;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  border: none;
+  box-sizing: border-box;
+}
+
+.operador {
+  color: #c519ff;
+}
+
+#ac {
+  color: #ff7070;
+}
+
+#de {
+  color: #7e67fb;
+}
+
+#igual {
+  width: calc(50% - 10px);
+  color: black;
+}
+
+button {
+  width: calc(25% - 10px);
+  height: 50px;
+  font-size: 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  float: left;
+  background-color: #ffc1d2;
+  color: white;
+  -webkit-box-shadow: -1px 1px 30px -5px rgba(234, 0, 255, 0.2);
+  -moz-box-shadow: -1px 1px 30px -5px rgba(234, 0, 255, 0.2);
+  box-shadow: -1px 1px 30px -5px rgba(234, 0, 255, 0.2);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.05);
+  box-shadow: 0 20px 4px 1px rgba(0, 0, 0, 0.10), 0 1.5px rgba(0, 0, 0, 0.10);
+}
+
+#history {
+  width: 25%;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  background-color: #eb79b6;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#botonBorrar{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 20px;
+}
+
+#borrarHistorial{
+  width: 70px;
+  height: 30px;
+  padding: 10px 20 px; 
+  font-size: 16px;
+  background-color: #ff7070;
+}
+

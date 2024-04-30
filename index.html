@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora - Emma</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+  <header>
+    <h1>Calculadora con HTML, CSS y JavaScript</h1>
+    <h2>Emma Li Merino León</h2>
+  </header>
+  
+  <div class="calculadora">
+    <input type="text" id="display" disabled>
+    <div class="keys">
+      <button id="ac" onclick="clearDisplay()">AC</button>
+      <button id="de" onclick="deleteLastDigit()">DE</button>
+      <button class="operador" onclick="appendToDisplay(this.innerHTML)">.</button>
+      <button class="operador" onclick="appendToDisplay(this.innerHTML)">/</button>
+
+      <button id="7"  onclick="appendToDisplay(this.innerHTML)">7</button>
+      <button id="8"  onclick="appendToDisplay(this.innerHTML)">8</button>
+      <button id="9"  onclick="appendToDisplay(this.innerHTML)">9</button>
+      <button class="operador"  onclick="appendToDisplay(this.innerHTML)">*</button>
+
+      <button id="4"  onclick="appendToDisplay(this.innerHTML)">4</button>
+      <button id="5"  onclick="appendToDisplay(this.innerHTML)">5</button>
+      <button id="6"  onclick="appendToDisplay(this.innerHTML)">6</button>
+      <button class="operador"  onclick="appendToDisplay(this.innerHTML)">-</button>
+
+      <button id="1"  onclick="appendToDisplay(this.innerHTML)">1</button>
+      <button id="2"  onclick="appendToDisplay(this.innerHTML)">2</button>
+      <button id="3"  onclick="appendToDisplay(this.innerHTML)">3</button>
+      <button class="operador"  onclick="appendToDisplay(this.innerHTML)">+</button>
+
+      <button id="00"  onclick="appendToDisplay(this.innerHTML)">00</button>
+      <button id="0"  onclick="appendToDisplay(this.innerHTML)">0</button>
+      <button id="igual"  onclick="calculate()">=</button>
+      
+    </div>
+  </div>
+
+  <div id="history">
+    <h2>Historial de Operaciones</h2>
+    <ul id="history-list"></ul>
+    <div id="botonBorrar">
+    <button id="borrarHistorial" onclick="borrarHistorial()">Borrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
